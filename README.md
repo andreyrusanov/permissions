@@ -4,7 +4,7 @@ to get information about file permissions in Unix systems.
 
 ## Installation
 ```
-pip install permissions
+pip install file-permissions
 ```
 
 ## Example

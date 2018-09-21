@@ -9,7 +9,7 @@ with io.open('README.md', encoding='utf-8') as f:
     long_description = '\n' + f.read()
 
 setup(
-    name='permissions',
+    name='file-permissions',
     version=VERSION,
     description='A tiny wrapper to get information about file permissions',
     long_description=long_description,
