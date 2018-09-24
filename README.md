@@ -16,6 +16,8 @@ p.executable()
 # False
 p.readable()
 # True
+
+
 ```
 
 ## Reference

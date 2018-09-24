@@ -12,6 +12,9 @@ class PermissionsContainer(object):
         self._file = file_obj
         self._fp = self._process_permissions()
 
+    def __str__(self):
+        return self.umask
+
     def _process_permissions(self):
         return os.stat(self._file)
 
@@ -79,6 +82,12 @@ class PermissionsContainer(object):
         Detects whether file could be executed by current user
         """
         return os.access(self._file, os.EX_OK)
+
+    def chmod(self, policy):
+        """
+        Changes file permissions
+        """
+        os.chmod(self._file, policy)
 
 
 def get_permissions_from(file_obj):
