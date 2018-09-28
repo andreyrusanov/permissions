@@ -2,6 +2,11 @@
 `Permissions` provides a tiny wrapper on top of built-in Python's libraries 
 to get information about file permissions in Unix systems.  
 
+## Motivation
+Currently everything related to permission management is spreaded across few packages. 
+It is nice and handy to have everything gathered together. `Permissions` is quite incomplete 
+at the moment and any kind of missed functionality is welcome as pull requests or GitHub issues.
+
 ## Installation
 ```
 pip install file-permissions
@@ -16,7 +21,6 @@ p.executable()
 # False
 p.readable()
 # True
-
 
 ```
 
